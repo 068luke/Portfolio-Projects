@@ -22,7 +22,7 @@ SET SaleDateConverted = Convert(Date,SaleDate)
 Select PropertyAddress
 From [Portfolio Project].dbo.NashvilleHousing
 --Where PropertyAddress is null
-order by ParcelID
+Order by ParcelID
 
 Select a.ParcelID, a.PropertyAddress, b.ParcelID, b.PropertyAddress, ISNULL(a.PropertyAddress,b.PropertyAddress)
 From [Portfolio Project].dbo.NashvilleHousing a
